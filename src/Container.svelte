@@ -20,9 +20,9 @@
     width: var(--width, 100%);
     margin: var(--margin, 0 auto 1rem auto);
     padding: var(--padding, 0.75rem);
-    border: var(--border, 0px solid transparent);
+    border: var(--border, 2px solid transparent);
     border-color: var(--border-color, transparent);
-    background: var(--background, rgb(0 0 0 / 5%))
+    background: var(--background, var(--primary, rgb(0 0 0 / 5%)))
   }
 
   .header {
@@ -70,7 +70,7 @@
   }
 </style>
 
-  <div
-    class="container {size}-size" class:hoverable class:noStyle class:header class:footer {header} on:click>
-    <slot />
-  </div>
+<div
+  class="container {size}-size" class:hoverable class:noStyle class:header class:footer {header} on:click>
+  <slot />
+</div>
